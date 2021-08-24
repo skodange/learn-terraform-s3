@@ -3,7 +3,7 @@ resource "aws_s3_bucket" "tfbucket" {
   acl    = "private"
 
   tags = {
-    Name        = "Shreehari-S3-Bucket"
-    Environment = "Demo"
+    Name        = var.s3_name
+    Environment = var.env_name
   }
 }
